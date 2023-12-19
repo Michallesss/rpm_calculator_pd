@@ -23,11 +23,8 @@ double calculate(Stack<string> stack)
         a = calculate(stack);
         if (stack2 == "+") a += b;
         else if (stack2 == "-") a -= b;
-        else
-        {
-            a = 0;
-            Console.WriteLine("lipa");
-        }
+        else if (tk=="*") x *= y;
+        else if (tk=="/") x /= y;
     } 
     return a;   
 }
